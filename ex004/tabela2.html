@@ -4,6 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    
+
+    <style>
+        *{ margin: 0px;
+        padding: 0px;}
+
+
+        th, td{ border: 1px solid black;
+        padding: 10px;}
+
+        th{ background-color: grey;}
+
+        table{ border-collapse: collapse;
+        width: 500px; margin: auto;}
+
+        td{ text-align: right;}
+
+        .right{ text-align: left; 
+                font-weight: bolder;}
+
+        h1{
+                padding-bottom: 3rem ;
+                padding-top: 2rem;
+                text-align: center;
+        }
+
+
+    </style>
+
+
+
+
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
@@ -20,5 +52,38 @@
                     (tr, td, th)
             -->
 
+
+        <table>
+                <thead>
+                        <th>Estados</th>
+                        <th>População</th>
+                        <th>População 2024</th>
+                </thead>
+                        <tr>
+                              <td class="right">São Paulo</td>
+                              <td>46 081 801</td> 
+                              <td>450973 194</td> 
+                        </tr>
+
+                        <tr>
+                                <td class="right">Minas Gerais</td>
+                                <td>21 393 441</td>
+                                <td>21 332 691</td>
+                        </tr>
+                        
+                        <tr>
+                                <td class="right">Rio de Janeiro</td>
+                                <td>17 223 547</td>
+                                <td>17 219 679</td>
+                        </tr>
+                <tbody>
+
+                </tbody>
+                <tfoot> 
+                        <th>Total</th>
+                        <td>00000</td>
+                </tfoot>
+        
+        </table>
 </body>
 </html>

@@ -12,14 +12,23 @@
 
 
         th, td{ border: 1px solid black;
-        padding: 10px;}
+        padding: 10px;
+        width: 200p;}
 
-        th{ background-color: grey;}
+        th{ background-color: grey;
+        }
 
         table{ border-collapse: collapse;
-        width: 500px; margin: auto;}
+        width: 500px; margin: auto;
+        height: 1500px;
+        position: relative;}
 
         td{ text-align: right;}
+
+        thead > tr > th{ 
+                position: sticky;
+                top: -1px;
+        }
 
         .right{ text-align: left; 
                 font-weight: bolder;}
@@ -28,8 +37,13 @@
                 padding-bottom: 3rem ;
                 padding-top: 2rem;
                 text-align: center;
+                
         }
+                caption{font-size: 2rem;
+                        padding-bottom: 20px;
+                        font-weight: bolder;}
 
+        tbody > tr:nth-child(odd){ background-color: rgba(128, 128, 128, 0.521);}
 
     </style>
 
@@ -42,6 +56,8 @@
 
         <!-- 
         Anotomia para tabelas grandes 
+         
+        caption
         
             table
             thead
@@ -54,10 +70,11 @@
 
 
         <table>
+                <caption>População 2025</caption>
                 <thead>
-                        <th>Estados</th>
-                        <th>População</th>
-                        <th>População 2024</th>
+                        <th scope="col">Estados</th>
+                        <th scope="col" style="width: 100px;">População</th>
+                        <th scope="col" style="width: 100px;">População 2024</th>
                 </thead>
                         <tr>
                               <td class="right">São Paulo</td>
@@ -80,7 +97,7 @@
 
                 </tbody>
                 <tfoot> 
-                        <th>Total</th>
+                        <th scope="row">Total</th>
                         <td>00000</td>
                 </tfoot>
         
